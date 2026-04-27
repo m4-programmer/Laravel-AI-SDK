@@ -10,6 +10,12 @@ class ChartAccountType extends Model
 {
     protected $guarded = ['*'];
 
+//    public function getTable()
+//    {
+//        return config('coa.model_connections.books_db') . '.chart_account_types';
+//    }
+
+
     public function chartAccount(): BelongsTo
     {
         return $this->belongsTo(ChartAccount::class, 'chart_account_id');

@@ -8,4 +8,8 @@ return [
     */
     'service_auth_secret' => env('SERVICE_AUTH_SECRET', ''),
 
+     'model_connections' => [
+        'books_db' => env('BOOKS_DB', 'vgtechde_gopaddi_books'),
+    ],
+
 ];

@@ -14,6 +14,11 @@ class ChartAccount extends Model
      */
     protected $guarded = ['*'];
 
+//    public function getTable()
+//    {
+//        return config('coa.model_connections.books_db') . '.chart_accounts';
+//    }
+
     public function accountTypes(): HasMany
     {
         return $this->hasMany(ChartAccountType::class, 'chart_account_id');
